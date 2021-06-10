@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Properties Component A - v2"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[master.version-update]">
+    <content
+        granite:class="version_update"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <text
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Text"
+                        name="./text"/>
+                    <version
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                        emptyText="Select Version"
+                        fieldLabel="Version"
+                        name="./version">
+                        <items jcr:primaryType="nt:unstructured">
+                            <v1
+                                jcr:primaryType="nt:unstructured"
+                                text="V1"
+                                value="v1"/>
+                            <v2
+                                jcr:primaryType="nt:unstructured"
+                                text="V2"
+                                value="v2"/>
+                        </items>
+                    </version>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>
